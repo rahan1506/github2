@@ -18,4 +18,4 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-Enjoy! If you want I can add a shopping cart backend, more images, or deploy this to GitHub Pages.
+Enjoy!
