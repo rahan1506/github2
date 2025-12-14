@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Paw & Purr — Pet Boutique</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Crimson+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="description" content="Paw & Purr — a boutique for pets with premium toys, food, and care services.">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="#home">
+          <img src="assets/logo.svg" alt="Paw & Purr logo">
+          <span>Paw & Purr</span>
+        </a>
+        <nav class="nav" id="nav">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#shop">Shop</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button id="menuBtn" class="menu-btn" aria-label="Toggle menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1 class="hero-title">Love. Care. Joy.</h1>
+            <p class="hero-sub">Premium products, grooming, and adoption support for dogs, cats, and birds.</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#shop">Shop Now</a>
+              <a class="btn ghost" href="#services">Our Services</a>
+            </div>
+          </div>
+          <div class="hero-art">
+            <img class="floating" src="assets/dog.svg" alt="Happy dog">
+            <img class="floating delay" src="assets/cat.svg" alt="Playful cat">
+            <img class="floating delay2" src="assets/parrot.svg" alt="Colorful parrot">
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section services">
+        <div class="container">
+          <h2 class="section-title">Services</h2>
+          <p class="muted">Grooming, daycare, training, and veterinary partnerships.</p>
+          <div class="cards">
+            <article class="card">
+              <h3>Grooming</h3>
+              <p>Professional grooming with gentle products for every breed and coat.</p>
+            </article>
+            <article class="card">
+              <h3>Daycare</h3>
+              <p>Playful, supervised daycare so pets can socialize and exercise safely.</p>
+            </article>
+            <article class="card">
+              <h3>Training</h3>
+              <p>Positive-reinforcement training to build great habits and confident pets.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop" class="section shop">
+        <div class="container">
+          <h2 class="section-title">Featured Products</h2>
+          <div class="grid">
+            <div class="product">
+              <div class="prod-img"><img src="assets/dog.svg" alt="toy"></div>
+              <h4>Cloud Plush Toy</h4>
+              <p class="price">$12</p>
+              <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product">
+              <div class="prod-img"><img src="assets/cat.svg" alt="toy"></div>
+              <h4>Whisker Wand</h4>
+              <p class="price">$8</p>
+              <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product">
+              <div class="prod-img"><img src="assets/parrot.svg" alt="toy"></div>
+              <h4>Perch & Play</h4>
+              <p class="price">$25</p>
+              <button class="btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section gallery">
+        <div class="container">
+          <h2 class="section-title">Gallery</h2>
+          <div class="gallery-grid">
+            <img data-full="assets/dog.svg" src="assets/dog.svg" alt="dog"/>
+            <img data-full="assets/cat.svg" src="assets/cat.svg" alt="cat"/>
+            <img data-full="assets/parrot.svg" src="assets/parrot.svg" alt="parrot"/>
+            <img data-full="assets/dog.svg" src="assets/dog.svg" alt="dog2"/>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <h2 class="section-title">About Paw & Purr</h2>
+          <p>We're a small team of animal lovers offering curated products and caring services. Our mission is to make every pet happier and healthier.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="container">
+          <h2 class="section-title">Contact Us</h2>
+          <form id="contactForm" class="contact-form">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="message" rows="4" placeholder="How can we help?" required></textarea>
+            <div class="form-actions">
+              <button class="btn primary" type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Paw & Purr — All rights reserved.</p>
+        <div class="social">Follow us on <a href="#">Instagram</a> &middot; <a href="#">Facebook</a></div>
+      </div>
+    </footer>
+
+    <div id="modal" class="modal" aria-hidden="true">
+      <button id="closeModal" class="modal-close">✕</button>
+      <img id="modalImg" src="" alt="">
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
